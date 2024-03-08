@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "esbuild src/index.tsx --bundle --minify --outfile=public/bundle.js",
-    "dev": "npm run build -- --watch=forever & http-server"
+    "dev": "npm run build -- --watch=forever & http-server --proxy http://localhost:3000?"
   },
   "keywords": [],
   "author": "",
