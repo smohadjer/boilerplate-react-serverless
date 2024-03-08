@@ -1,8 +1,8 @@
-# Boilerplate for creating SPAs with React + Vercel's serverless (no framework)
+# Boilerplate for creating React SPAs on Vercel's serverless platform without dependency on any frameworks
 
 https://boilerplate-react-serverless.vercel.app/
 
-## Run on http://localhost:3000 using Vercel CLI
+## Run on http://localhost:3000 (requires Vercel CLI)
 ````
 git clone https://github.com/smohadjer/boilerplate-react-serverless.git
 npm install
