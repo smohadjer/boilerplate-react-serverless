@@ -33,7 +33,7 @@ export default function Home() {
 
     return (
         <>
-            <h1>Boilerplate for building SPAs with React and Vercel's serverless API</h1>
+            <h1>Boilerplate for building SPAs with React and Vercel's serverless</h1>
             <p><Link to="/contacts">Link to Contacts</Link></p>
             <ul className="items">
             {

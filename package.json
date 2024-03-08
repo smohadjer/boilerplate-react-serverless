@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --minify --outfile=public/bundle.js",
-    "dev": "npm run build -- --watch=forever & http-server --proxy http://localhost:3000?"
+    "build": "esbuild src/index.tsx --bundle --minify --outfile=public/bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +15,6 @@
   "devDependencies": {
     "dotenv": "^16.4.5",
     "esbuild": "^0.20.1",
-    "http-server": "^14.1.1",
     "react-router-dom": "^6.22.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
