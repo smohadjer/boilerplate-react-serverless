@@ -8,16 +8,27 @@ interface Item {
  name: string;
 }
 
+interface Cache {
+    data?: [];
+}
+
+const cache: Cache = {};
+
 export default function Home() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('/api/json-server')
-        .then(res => res.json())
-        .then(json => {
-            setData(json);
-            console.log(json);
-        });
+        if (cache.data) {
+            setData(cache.data);
+        } else {
+            fetch('/api/json-server')
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                setData(json);
+                cache.data = json;
+            });
+        }
     }, []);
 
     return (
