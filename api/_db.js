@@ -3,6 +3,6 @@ import { MongoClient } from 'mongodb';
 
 dotenv.config();
 
-const client = new MongoClient(process.env.db_uri_remote);
+const client = new MongoClient(process.env.DB_URI);
 
 export default client;
