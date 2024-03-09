@@ -43,6 +43,18 @@ export default function Home() {
         }
     }, []);
 
+    const getList = (data) => {
+        return (
+            <ul className="items">
+            {
+                data.map((item: Item) => {
+                    return <li key={item.id}>{item.id} {item.name}</li>
+                })
+            }
+            </ul>
+        )
+    }
+
     return (
         <>
             <h1>Boilerplate for building SPAs with React and Vercel's serverless</h1>
@@ -50,23 +62,11 @@ export default function Home() {
             <div className="flex">
                 <div>
                     <h2>Fruits from static JSON file</h2>
-                    <ul className="items">
-                    {
-                        data.map((item: Item) => {
-                            return <li key={item.id}>{item.id} {item.name}</li>
-                        })
-                    }
-                    </ul>
+                    {data.length ? getList(data) : 'Loading...'}
                 </div>
                 <div>
                     <h2>Fruits from MongoDB database</h2>
-                    <ul className="items">
-                    {
-                        dbData.map((item: Item) => {
-                            return <li key={item.id}>{item.id} {item.name}</li>
-                        })
-                    }
-                    </ul>
+                    {dbData.length ? getList(dbData) : 'Loading...'}
                 </div>
             </div>
         </>
