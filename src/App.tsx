@@ -6,6 +6,7 @@ import Contact from "./pages/contact";
 import Test from "./pages/test";
 import NotFound from "./pages/notfound";
 import Layout from "./pages/layout";
+import './app.css';
 
 export default function App() {
     return (
