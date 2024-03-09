@@ -1,1 +1,1 @@
-.items{padding:1em}.active{color:salmon;background:#ff0}header,footer{background:#eee;padding:1em}
+.flex{display:flex;gap:2em}h2{margin-bottom:0}.items{padding:.5em 1em;margin:0}.active{color:salmon;background:#ff0}header,footer{background:#eee;padding:1em}footer{margin-top:2em}
